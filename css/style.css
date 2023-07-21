@@ -325,7 +325,7 @@ p {
 ---------------------------------*/
 
 #header_wrapper {
-    background: #787373;
+    background: #0d0c0c;
     padding: 15px 0px;
 	
 	box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.44);
@@ -418,7 +418,7 @@ p {
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #940a26;
+    color: #cf3e5b;
     background-color: transparent;
     border-radius: 4px;
 }
