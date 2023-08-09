@@ -6,6 +6,9 @@
 <title>Kimberly Villalobos Carballo</title>
 <meta name="description" content="Kimberly Villalobos Carballo Personal Website">
 <meta name="author" content="Kimberly Villalobos Carballo">
+
+
+<!-- CSS style files -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
@@ -19,15 +22,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-9VL7QS2E4Q');
 </script>
- 
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
+
  
 </head>
 <body>
@@ -35,60 +32,52 @@
 
 <!--Header_section-->
 <header id="header_wrapper">
-
   <div class="header-left">
 
-      <!-- logo -->
-      <div class="logo smooth-scroll">
-        <a href="#banner"> <img id="logo" src="logo.svg" alt="Worthy" style="padding-left: 15px;"></a>
-      </div>
-
+    <!-- logo -->
+    <div class="logo smooth-scroll">
+      <a> <img id="logo" src="logo.svg" alt="Worthy" style="padding-left: 15px;"></a>
     </div>
 
+  </div>
 
+  <!-- navigation bar -->
   <div class="container">
     <div class="header_box">
-      <!--<div class="logo"><a href="#">Resume</a></div>-->
-	  <nav class="navbar navbar-inverse" role="navigation">
-      <div class="navbar-header">
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        </div>
+	   <nav class="navbar navbar-inverse" role="navigation">
 	    <div id="main-nav" class="collapse navbar-collapse navStyle">
 			<ul class="nav navbar-nav" id="mainNav">
 			  <li class="active"><a href="#AboutMe" class="scroll-link">About Me</a></li>
-        <li><a href="#AboutMe" type="image/png" class="scroll-logo" src="logo.png"></a></li>
 			  <li><a href="#Research" class="scroll-link">Research</a></li>
 			  <li><a href="#Teaching" class="scroll-link">Teaching</a></li> 
 			  <li><a href="#Awards" class="scroll-link">Awards</a></li> 
 			</ul>
       </div>
-	 </nav>
-    </div>
+	  </nav>
+   </div>
   </div>
+
 </header>
-<!--Header_section--> 
 
-<section id="AboutMe"><!--Aboutus-->
-<div class="inner_wrapper about-us aboutUs-container fadeInLeft animated wow">
-  <div class="container">
-    <h2></h2>
-    <div class="inner_section">
-    	<h3 style="color:#940a26;font-size:30px;margin-left: 30px"> Kimberly Villalobos Carballo</h3> 
-      	<h4 style="color:#940a26;margin-left: 30px"> <b>Contact:</b> kimvc [at] mit.edu</h4> 
- <div class="row" style="margin-bottom: 50px">
 
-      <div class="col-md-6"  style="margin: 30px">
-      	<img class="img-responsive" src="kim.jpg" align="center"> </div>
-      <div class="col-sm-pull-11" style="margin:30px" >
-      <p align="justify" style="font-size:18px;margin-top: 50px;margin-bottom: 10px;color:#636060"> I am a fourth-year PhD student at the Operations Research Center at MIT, under the guidance of Professor Dimitris Bertsimas. My research centers around leveraging Optimization and Deep Learning tools to enhance standard Machine Learning algorithms. I am particularly passionate about Healthcare applications, and a large part of my research has been inspired by collaborarions with hospitals that aim to improve the quality of their services and operations.</p> 
-      <p align="center" style="color:#940a26;font-size:18px"> I will be on the job market this Fall 2023!
-      </p> 
-      </div>
+<!--AboutMe-->
+<section id="AboutMe">
+  <div class="inner_wrapper AboutMe AboutMe-container fadeInLeft animated wow">
+    <div class="container">
+      <div class="inner_section">
+        <h3> Kimberly Villalobos Carballo</h3> 
+        <h4> <b>Contact:</b> kimvc [at] mit.edu</h4> 
+
+        <div class="col-md-6"> <img class="img-responsive" src="kim.jpg"> </div>
+        
+        <div class="col-sm-pull-11">
+          <p align="justify"> I am a fourth-year PhD student at the Operations Research Center at MIT, under the guidance of Professor Dimitris Bertsimas. My research centers around leveraging Optimization and Deep Learning tools to enhance standard Machine Learning algorithms. I am particularly passionate about Healthcare applications, and a large part of my research has been inspired by collaborarions with hospitals that aim to improve the quality of their services and operations.</p> 
+          <h4 align="center"> I will be on the job market this Fall 2023!</h4> 
+        </div>
+
       </div>
     </div>
-	     </div>
-  </div> 
-  </div>
+	</div>
 </section>
 
 <hr>
@@ -96,136 +85,129 @@
 
 <!--Research-->
 <section id="Research" >
-  <div class="container portfolio_title" style="margin-bottom: 50px;margin-top: 50px">
-  	<h2 style="font-size:30px">Research</h2>
-		<ul>
+  <div class="inner_wrapper Research Research-container">
+    <div class="container">
+  	 <h2>Research</h2>
+		  <ul>
+  			<li>
+            <a href="https://arxiv.org/abs/2206.10381">TabText: A Flexible and Contextual Approach to Tabular Data Representation</a>
+            <br>Kimberly Villalobos Carballo, Liangyuan Na, Yu Ma, Léonard Boussioux, Cynthia Zeng, Luis R. Soenksen, Dimitris Bertsimas
+            <br>To be submitted
+        </li>
 
-			<li>
-                <a href="https://arxiv.org/abs/2206.10381">TabText: A Flexible and Contextual Approach to Tabular Data Representation</a>
-                <br>Kimberly Villalobos Carballo, Liangyuan Na, Yu Ma, Léonard Boussioux, Cynthia Zeng, Luis R. Soenksen, Dimitris Bertsimas
-                <br>To be submitted
-            </li>
+        <li>
+            <a href="https://arxiv.org/abs/2305.15629">Patient Outcome Predictions Improve Operations at a Large Hospital Network</a>
+            <br>Liangyuan Na, Kimberly Villalobos Carballo, Jean Pauphilet, Ali Haddad-Sisakht, Daniel Kombert, Melissa Boisjoli-Langlois, Andrew Castiglione, Maram Khalifa, Pooja Hebbal, Barry Stein, Dimitris Bertsimas
+            <br>Submitted to Manufacturing & Service Operations Management (M&SOM), 2023
+        </li>
 
-             <li>
-                <a href="https://arxiv.org/abs/2305.15629">Patient Outcome Predictions Improve Operations at a Large Hospital Network</a>
-                <br>Liangyuan Na, Kimberly Villalobos Carballo, Jean Pauphilet, Ali Haddad-Sisakht, Daniel Kombert, Melissa Boisjoli-Langlois, Andrew Castiglione, Maram Khalifa, Pooja Hebbal, Barry Stein, Dimitris Bertsimas
-                <br>Submitted to Manufacturing & Service Operations Management (M&SOM), 2023
-            </li>
+  	    <li>
+            <a href="https://arxiv.org/abs/2110.15829">Holistic Deep Learning</a>
+            <br>Dimitris Bertsimas, Kimberly Villalobos Carballo, Léonard Boussioux, Michael Lingzhi Li, Alex Paskov, Ivan Paskov
+            <br>Submitted to Machine Learning (MACH), 2023
+        </li>
 
-	        <li>
-                <a href="https://arxiv.org/abs/2110.15829">Holistic Deep Learning</a>
-                <br>Dimitris Bertsimas, Kimberly Villalobos Carballo, Léonard Boussioux, Michael Lingzhi Li, Alex Paskov, Ivan Paskov
-                <br>Submitted to Machine Learning (MACH), 2023
-            </li>
+        <li>
+            <a href="https://arxiv.org/abs/2303.06515">Multistage Stochastic Optimization via Kernels</a>
+            <br>Dimitris Bertsimas, Kimberly Villalobos Carballo
+            <br>Submitted to Mathematical Programming (MAPR), 2023
+        </li>
 
-            <li>
-                <a href="https://arxiv.org/abs/2303.06515">Multistage Stochastic Optimization via Kernels</a>
-                <br>Dimitris Bertsimas, Kimberly Villalobos Carballo
-                <br>Submitted to Mathematical Programming (MAPR), 2023
-            </li>
+        <li>
+            <a href="https://arxiv.org/abs/2112.09279">Robust Upper Bounds for Adversarial Training</a>
+            <br>Dimitris Bertsimas, Xavier Boix, Kimberly Villalobos Carballo, Dick den Hertog
+            <br>Submitted to Journal of Machine Learning Research (JMLR), 2023
+        </li>
 
-            <li>
-                <a href="https://arxiv.org/abs/2112.09279">Robust Upper Bounds for Adversarial Training</a>
-                <br>Dimitris Bertsimas, Xavier Boix, Kimberly Villalobos Carballo, Dick den Hertog
-                <br>Submitted to Journal of Machine Learning Research (JMLR), 2023
-            </li>
+        <li>
+            <a href="https://www.nature.com/articles/s41746-022-00689-4">Integrated multimodal artificial intelligence framework for healthcare applications</a>
+            <br>Luis R Soenksen, Yu Ma, Cynthia Zeng, Leonard Boussioux, Kimberly Villalobos Carballo, Liangyuan Na, Holly M Wiberg, Michael L Li, Ignacio Fuentes, Dimitris Bertsimas
+            <br>NPJ Digital Medicine (NPJDIGITALMED), 2022
+        </li>
 
-            <li>
-                <a href="https://www.nature.com/articles/s41746-022-00689-4">Integrated multimodal artificial intelligence framework for healthcare applications</a>
-                <br>Luis R Soenksen, Yu Ma, Cynthia Zeng, Leonard Boussioux, Kimberly Villalobos Carballo, Liangyuan Na, Holly M Wiberg, Michael L Li, Ignacio Fuentes, Dimitris Bertsimas
-                <br>NPJ Digital Medicine (NPJDIGITALMED), 2022
-            </li>
+        <li>
+            <a href="https://link.springer.com/article/10.1007/s10729-020-09542-0">From predictions to prescriptions: A data-driven response to COVID-19</a>
+            <br>Dimitris Bertsimas, Leonard Boussioux, Ryan Cory-Wright, Arthur Delarue, Vassilis Digalakis, Alexandre Jacquillat, Driss Lahlou Kitane, Galit Lukin, Michael Li, Luca Mingardi, Omid Nohadani, Agni Orfanoudaki, Theodore Papalexopoulos, Ivan Paskov, Jean Pauphilet, Omar Skali Lami, Bartolomeo Stellato, Hamza Tazi Bouardi, Kimberly Villalobos Carballo, Holly Wiberg, Cynthia Zeng
+            <br>Health Care Management Science, 2021
+        </li>
 
-             <li>
-                <a href="https://link.springer.com/article/10.1007/s10729-020-09542-0">From predictions to prescriptions: A data-driven response to COVID-19</a>
-                <br>Dimitris Bertsimas, Leonard Boussioux, Ryan Cory-Wright, Arthur Delarue, Vassilis Digalakis, Alexandre Jacquillat, Driss Lahlou Kitane, Galit Lukin, Michael Li, Luca Mingardi, Omid Nohadani, Agni Orfanoudaki, Theodore Papalexopoulos, Ivan Paskov, Jean Pauphilet, Omar Skali Lami, Bartolomeo Stellato, Hamza Tazi Bouardi, Kimberly Villalobos Carballo, Holly Wiberg, Cynthia Zeng
-                <br>Health Care Management Science, 2021
-            </li>
+  	    <li>
+            <a href="https://www.covidanalytics.io/dataset_documentation">An aggregated dataset of clinical outcomes for covid-19 patients</a>
+            <br>Dimitris Bertsimas, Leonard Boussioux, Ryan Cory-Wright, Arthur Delarue, Vassilis Digalakis, Alexandre Jacquillat, Driss Lahlou Kitane, Galit Lukin, Michael Li, Luca Mingardi, Omid Nohadani, Agni Orfanoudaki, Theodore Papalexopoulos, Ivan Paskov, Jean Pauphilet, Omar Skali Lami, Bartolomeo Stellato, Hamza Tazi Bouardi, Kimberly Villalobos Carballo, Holly Wiberg, Cynthia Zeng
+            <br>2022
+        </li>
 
-	    <li>
-                <a href="https://www.covidanalytics.io/dataset_documentation">An aggregated dataset of clinical outcomes for covid-19 patients</a>
-                <br>Dimitris Bertsimas, Leonard Boussioux, Ryan Cory-Wright, Arthur Delarue, Vassilis Digalakis, Alexandre Jacquillat, Driss Lahlou Kitane, Galit Lukin, Michael Li, Luca Mingardi, Omid Nohadani, Agni Orfanoudaki, Theodore Papalexopoulos, Ivan Paskov, Jean Pauphilet, Omar Skali Lami, Bartolomeo Stellato, Hamza Tazi Bouardi, Kimberly Villalobos Carballo, Holly Wiberg, Cynthia Zeng
-                <br>2022
-            </li>
-
-             <li>
-                <a href="https://arxiv.org/pdf/2201.10664.pdf">Do neural networks for segmentation understand insideness?</a>
-                <br>Kimberly Villalobos, Vilim Štih, Amineh Ahmadinejad, Shobhita Sundaram, Jamell Dozier, Andrew Francl, Frederico Azevedo, Tomotake Sasaki, Xavier Boix
-                <br>Neural Computation, 2021
-            </li>
-
-       
-
-		</ul><!-- /.about-us-list -->
+        <li>
+            <a href="https://arxiv.org/pdf/2201.10664.pdf">Do neural networks for segmentation understand insideness?</a>
+            <br>Kimberly Villalobos, Vilim Štih, Amineh Ahmadinejad, Shobhita Sundaram, Jamell Dozier, Andrew Francl, Frederico Azevedo, Tomotake Sasaki, Xavier Boix
+            <br>Neural Computation, 2021
+        </li>
+		  </ul>
+    </div>
   </div>
 </section>
 
 <hr>
-<!--Service-->  
 
-<!-- Portfolio -->
+
+<!-- Teaching -->
 <section id="Teaching" class="content"> 
-  <!-- Container -->
-  <div class="container portfolio_title" style="margin-bottom: 50px;margin-top: 50px"> 
-    <h2 style="font-size:30px">Teaching</h2>
-    <!-- Title -->
-		<ul >
-			<li> Machine Learning via a Modern Optimization Lens (15.095) 
-			<br> Teaching Assistant - Fall 2022
+  <div class="inner_wrapper Teaching Teaching-container"> 
+    <div class="container">
+      <h2>Teaching</h2>
+		  
+      <ul >
+			<li> Machine Learning via a Modern Optimization Lens (MIT 15.095) 
+			  <br> Teaching Assistant - Fall 2022
 			</li> 
 
-	        <li> Robust Modeling, Optimization, and Computation (15.094) 
-			<br> Teaching Assistant - Spring 2022
+	    <li> Robust Modeling, Optimization, and Computation (MIT 15.094) 
+			  <br> Teaching Assistant - Spring 2022
 			</li> 
 
-			<li> Analytics Capstone (15.089) 
-			<br> Teaching Assistant - Summer 2022
+			<li> Analytics Capstone (MIT 15.089) 
+			  <br> Teaching Assistant - Summer 2022
 			</li> 
 
-			<li> Analytics Software Tools (15.003) 
-			<br> Instructor - Fall 2021, Fall 2022
+			<li> Analytics Software Tools (MIT 15.003) 
+			  <br> Instructor - Fall 2021, Fall 2022, Fall 2023
 			</li> 
 
-			<li> The Analytics Edge (15.727) 
-			<br> Teaching Assistant - Spring 2021
+			<li> The Analytics Edge (MIT 15.727) 
+			  <br> Teaching Assistant - Spring 2021
 			</li> 
-
-
-		</ul><!-- /.about-us-list -->
-	 
-    <!--/Title --> 
-    
+		  </ul>
+    </div>
   </div>
-  <!-- Container -->
-  
-  <div class="portfolio-top"></div>
 </section>
 
 <hr>
   
-  <!-- Portfolio Filters -->
+  <!-- Awards -->
 <section id="Awards" class="content"> 
-  <div class="container portfolio_title" style="margin-bottom: 50px;margin-top: 50px"> 
-      <h2 style="font-size:30px">Awards</h2>
-		<ul class="about-us-list">
-			<li> Winner, MIT-Pillar AI Collective Prize 2023</li> 
+  <div class="inner_wrapper Awards Awards-container"> 
+    <div class="container">
+      <h2>Awards</h2>
+  		<ul>
+        <li> Finalist, Doing Good with Good OR - Student Paper Competition 2023</li> 
 
-			<li> Winner, MIT Cognex Poster Competition 2022</li>
+  			<li> Winner, MIT-Pillar AI Collective Prize 2023</li> 
 
-			<li> Winner, INFORMS’ William Pierskalla Best Paper Award 2020</li>
+  			<li> Winner, MIT Cognex Poster Competition 2022</li>
 
-			<li> Tau Beta Pi Honor Society</li>
+  			<li> Winner, INFORMS’ William Pierskalla Best Paper Award 2020</li>
 
-			<li> Pi Beta Kappa Honor Society</li>
+  			<li> Tau Beta Pi Honor Society</li>
 
-			<li> Bronze Medal, 55th International Mathematical Olympiad (<a href="https://www.imo-official.org/">IMO</a>), 2014</li> 
+  			<li> Pi Beta Kappa Honor Society</li>
 
-			<li> Bronze medal, Asian Pacific Mathematics Olympiad (<a href="https://apmo-official.org/">APMO</a>), 2013</li> 
+  			<li> Bronze Medal, 55th International Mathematical Olympiad (<a href="https://www.imo-official.org/">IMO</a>), 2014</li> 
 
-			<li> Bronze medal, Iberoamerican Mathematical Olympiad (OIM), 2013</li> 
-		</ul><!-- /.about-us-list -->
-	 
-    
+  			<li> Bronze medal, Asian Pacific Mathematics Olympiad (<a href="https://apmo-official.org/">APMO</a>), 2013</li> 
+
+  			<li> Bronze medal, Iberoamerican Mathematical Olympiad (OIM), 2013</li> 
+  		</ul>
+    </div>
   </div>
 </section>
 
