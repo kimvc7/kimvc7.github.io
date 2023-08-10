@@ -11,8 +11,18 @@ Licence under Creative Commons Attribution 3.0
 /* Reset
 ---------------------------------*/
 ul {
-    list-style: inside;
+  list-style: none; /* Remove default bullets */
 }
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #940a26; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 
 /* hr {
         width: 100%;
@@ -322,6 +332,10 @@ h3 {
     color:#222222
     font-size: 18px;
     margin: 0 0 5px 0;
+}
+
+h4 {
+    color:#940a26
 }
 
 h6 {
@@ -1088,7 +1102,12 @@ margin-top: 50px;
 }
 
 .Research h2{
-    font-size:30px;
+    font-size:25px;
+    font-weight:500;
+}
+
+.Research h4{
+    margin-top:30px;
 }
 
 .Teaching-container {
@@ -1104,7 +1123,8 @@ margin-top: 50px;
 }
 
 .Teaching h2{
-    font-size:30px;
+    font-size:25px;
+    font-weight:500;
 }
 
 .Awards-container {
@@ -1120,7 +1140,8 @@ margin-top: 50px;
 }
 
 .Awards h2{
-    font-size:30px;
+    font-size:25px;
+    font-weight:500;
 }
 
 
