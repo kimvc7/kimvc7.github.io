@@ -321,7 +321,7 @@ h2 {
     color: #222222;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
-    margin: 0px 0 25px 0;
+    margin: 0px 0 50px 0;
     text-align: center;
     text-transform: uppercase;
 }
@@ -1097,7 +1097,7 @@ background-position-y: 70px;
 margin-bottom: 50px;
 margin-top: 50px;
 }
-#Research, h2, h3, h4, p {
+#Research, h2, h3, h4, p{
 /* color: #0A1525; */
 }
 
@@ -1107,6 +1107,35 @@ margin-top: 50px;
 }
 
 .Research h4{
+    margin-top:30px;
+}
+
+.Research li{
+  margin-bottom: 30px;
+  font-size:18px;
+}
+
+/* Collaborations
+---------------------------------*/
+
+.Collaborations-container {
+background-repeat: no-repeat;
+background-position: right;
+background-size: auto 100%;
+background-position-y: 70px;
+margin-bottom: 50px;
+margin-top: 50px;
+}
+#Collaborations, h2, h3, h4, p{
+/* color: #0A1525; */
+}
+
+.Collaborations h2{
+    font-size:25px;
+    font-weight:500;
+}
+
+.Collaborations h4{
     margin-top:30px;
 }
 
