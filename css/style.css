@@ -8,30 +8,6 @@ Licence under Creative Commons Attribution 3.0
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
 @import url(http://fonts.googleapis.com/css?family=Signika:400,600);
 
-/* Reset
----------------------------------*/
-ul {
-  list-style: none; /* Remove default bullets */
-}
-
-ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #940a26; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
-}
-
-
-/* hr {
-        width: 100%;
-        height: 2px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #940a26;
-        border: 0 none;
-      }*/
 
 hr {
     border: none;
@@ -1116,6 +1092,19 @@ margin-top: 50px;
   font-size:18px;
 }
 
+.Research ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.Research ul li::before {
+  content: "\2022";
+  color: #940a26; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+} 
+
 /* Collaborations
 ---------------------------------*/
 
@@ -1144,6 +1133,20 @@ margin-top: 50px;
   margin-bottom: 30px;
 }
 
+
+.Collaborations ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.Collaborations ul li::before {
+  content: "\2022";
+  color: #940a26; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+} 
+
 .Teaching-container {
 background-repeat: no-repeat;
 background-position: right;
@@ -1160,6 +1163,20 @@ margin-top: 50px;
     font-size:25px;
     font-weight:500;
 }
+
+
+.Teaching ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.Teaching ul li::before {
+  content: "\2022";
+  color: #940a26; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+} 
 
 .Awards-container {
 background-repeat: no-repeat;
@@ -1179,6 +1196,18 @@ margin-top: 50px;
 }
 
 
+.Awards ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.Awards ul li::before {
+  content: "\2022";
+  color: #940a26; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+} 
 
 
 .team_section {
