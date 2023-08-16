@@ -1201,6 +1201,7 @@ background-position-y: 70px;
 
 .AboutMe .large_margin{
     margin-top:18px;
+    margin-right:2em;
 }
 
 .AboutMe .small_margin{
@@ -1457,8 +1458,8 @@ margin-top: 50px;
     margin-top:0px;
     text-align: center;
     margin-bottom:60px;
-    margin-left:10em;
-    margin-right:10em;
+    margin-left:2em;
+    margin-right:2em;
     color: #808080;
     font-size:20px;
 }
@@ -1516,6 +1517,7 @@ margin-top: 10px;
 .Teaching h4{
     color:#8c5762;
     font-weight: 2000;
+    font-size:16px;
 }
 
 .Teaching p{
