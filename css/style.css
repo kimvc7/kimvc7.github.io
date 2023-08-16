@@ -1597,9 +1597,6 @@ background-color: #f1f1f1;
     font-size: 15px;
 }
 
-.fa .fa-trophy{
-    margin:0px;
-}
 
 .Collaborations .img-responsive{
     width:60%;
@@ -1613,7 +1610,7 @@ background-color: #f1f1f1;
 }
 
 .Awards ul li::before {
-  content: '\2022';
+  content: '';
   color: black; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
@@ -1621,6 +1618,10 @@ background-color: #f1f1f1;
   margin-left: -1em; /* Also needed for space (tweak if needed) */
   margin-bottom:-10px;
 } 
+
+.fa-award {
+  margin-left:-1.2em;
+}
 
 
 .team_section {
