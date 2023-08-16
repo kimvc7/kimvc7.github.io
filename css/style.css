@@ -1279,6 +1279,22 @@ background-position-y: 70px;
 } 
 
 
+.CV-container {
+background-repeat:no-repeat;
+background-position: right;
+background-size: auto 110%;
+margin-top:0px;
+margin-bottom:0px;
+background-color: black;
+height:89em;
+text-align: center;
+}
+
+.CV iframe{
+  margin-top:3em;
+  height: 82em;
+}
+
 
 /* Research
 ---------------------------------*/
@@ -1385,8 +1401,7 @@ margin-right: 0px;
     margin-bottom:-10px;
     margin-top:-10px;
 }
-gin-top:10px;
-}
+
 
 .Teaching button{
     margin-bottom: 30px;
