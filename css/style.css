@@ -44,6 +44,169 @@ a, a:hover, a:active {
     outline: 10px !important;
 	text-decoration:none;
 }
+
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color:black;
+  top: -12px;
+  bottom: -10px;
+  margin-left: -3px;
+}
+
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+.timeline-card {
+  position: relative;
+  margin-left: 37px;
+  border-left: 2px solid;
+  margin-bottom: 1rem; 
+  width: 96%;}
+
+.timeline-card:last-child {
+  margin-bottom: 0rem; }
+
+.timeline-card:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 12px;
+  height: 12px;
+  top: 20px;
+  left: -41px;
+  border: 2px solid;
+  z-index: 2; }
+
+.timeline-card:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: currentColor;
+  width: 29px;
+  height: 2px;
+  top: 25px;
+  left: -29px;
+  z-index: 1; }
+
+.timeline-card-left {
+  position: relative;
+  margin-left: 21px;
+  border-right: 2px solid;
+  margin-bottom: 2rem; 
+  width: 45%;}
+
+.timeline-card-left:last-child {
+  margin-bottom: 0rem; }
+
+.timeline-card-left:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 12px;
+  height: 12px;
+  top: 20px;
+  right: -41px;
+  border: 2px solid;
+  z-index: 2; }
+
+.timeline-card-left:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: currentColor;
+  width: 29px;
+  height: 2px;
+  top: 25px;
+  right: -29px;
+  z-index: 1; }
+
+.timeline-card-primary {
+  border-left-color:  #940a26; }
+
+.timeline-card-primary:before {
+  border-color:  #940a26; }
+
+.timeline-card-primary:after {
+  background-color:  #940a26; }
+
+.timeline-card-left-primary {
+  border-right-color:  #940a26; }
+
+.timeline-card-left-primary:before {
+  border-color:  #940a26; }
+
+.timeline-card-left-primary:after {
+  background-color:  #940a26; }
+
+
 .clear {
     clear: both;
     display: list-item;
@@ -504,6 +667,8 @@ p {
   font-size: 1rem;
   margin: 15px 0 0;
 }
+
+
 
 /* Top_content
 ---------------------------------*/
@@ -1009,6 +1174,7 @@ background-position-y: 70px;
 	font-size:30px;
     margin-left: 30px;
     color:#940a26;
+    margin-top:0px;
 
 }
 .AboutMe h4{
@@ -1025,14 +1191,35 @@ background-position-y: 70px;
 .AboutMe p{
 	/*font-size: 0.9375em;*/
     margin-left:30px;
-    margin-right:30px;
-    font-size:18px;
-    margin-top: 50px;
+    margin-right:0px;
+    font-size:16px;
 	line-height: 1.625em;
-	padding: 15px 0;
-    margin-bottom: 10px;
+	padding: 16px 0;
+    margin-bottom: 0px;
     color:#636060;
 }
+
+.AboutMe .large_margin{
+    margin-top:18px;
+}
+
+.AboutMe .small_margin{
+    margin-top:-10px;
+    margin-bottom:-10px;
+}
+
+.small_margin{
+    margin-top:-10px;
+    margin-bottom:-10px;
+}
+
+.AboutMe .interests{
+    margin-top:-1px;
+    margin-bottom:0px
+    margin-left:5px;
+}
+
+
 .AboutMe .about-us-list{
 	list-style: none;
 	margin-bottom: 20px;
@@ -1062,6 +1249,32 @@ background-position-y: 70px;
 	margin-left: 0;
 }
 
+.AboutMe li{
+  margin-bottom: 5px;
+  margin-top: 0px;
+  font-size:14px;
+}
+
+.AboutMe ul {
+  margin-top: 0px;
+  list-style: none; /* Remove default bullets */
+}
+
+.AboutMe .interests ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.AboutMe  ul li::before {
+  content: "\1F393";
+  color: #000000; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.5em; /* Also needed for space (tweak if needed) */
+  height: 1em;
+  margin-left: 0em; /* Also needed for space (tweak if needed) */
+} 
+
+
 
 /* Research
 ---------------------------------*/
@@ -1069,41 +1282,150 @@ background-position-y: 70px;
 .Research-container {
 background-repeat: no-repeat;
 background-position: right;
-background-size: auto 100%;
+background-size: auto 110%;
 background-position-y: 70px;
-margin-bottom: 50px;
-margin-top: 50px;
+margin-bottom: 15px;
+margin-top: 10px;
 }
 #Research, h2, h3, h4, p{
 /* color: #0A1525; */
 }
 
+
+.Research-sub-container1{
+background-repeat: no-repeat;
+background-position: right;
+background-size: auto 110%;
+background-position-y: 70px;
+margin-bottom: 0px;
+margin-top: 0px;
+background-color:#f1f1f1;
+}
+
+.Research-sub-container1 .container{
+background-color:#f1f1f1;
+}
+
+.Research-sub-container2{
+background-repeat: no-repeat;
+background-position: right;
+background-size: auto 110%;
+background-position-y: 70px;
+margin-bottom: 0px;
+margin-top: 0px;
+background-color:white;
+}
+
+.Research-sub-container2 .container{
+background-color:white;
+}
+
 .Research h2{
-    font-size:25px;
-    font-weight:500;
+    font-size:30px;
+    font-weight:510;
+    text-indent: 30px;
+    margin-top:30px;
+    margin-bottom:0px;
+    text-transform: capitalize;
+
 }
 
 .Research h4{
-    margin-top:30px;
+    font-size:22px;
+    color:gray;
 }
 
 .Research li{
-  margin-bottom: 30px;
-  font-size:18px;
+  margin-bottom: 10px;
+  font-size:16px;
 }
 
 .Research ul {
   list-style: none; /* Remove default bullets */
 }
 
-.Research ul li::before {
-  content: "\2022";
-  color: #940a26; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
-} 
+
+.Timeline-container {
+background-repeat: no-repeat;
+background-position: right;
+background-size: auto 120%;
+background-position-y: 70px;
+margin-bottom: 50px;
+margin-top: 50px;
+background-color:#f1f1f1;
+margin-left: 0px;
+margin-right: 0px;
+}
+#Timeline, h2, h3, h4, p{
+/* color: #0A1525; */
+}
+
+.Timeline h2{
+    font-size:30px;
+    font-weight:510;
+    text-indent: 30px;
+    margin-top:30px;
+    margin-bottom:30px;
+    text-transform: capitalize;
+    color: black;
+
+}
+
+.Timeline h4{
+    margin-bottom:-10px;
+    margin-top:-10px;
+}
+gin-top:10px;
+}
+
+.Teaching button{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+
+.Teaching .collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 0px 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.Teaching .active, .collapsible:hover {
+  background-color: #dddddd;
+}
+
+.Teaching .collapsible:after {
+  content: '\002B';
+  color: grey;
+  font-weight: bold;
+  font-size:20px;
+  float: right;
+  margin-left: 0px;
+  margin-top: -60px;
+}
+
+.Teaching .active:after {
+  content: "\2212";
+}
+
+.Teaching .content {
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
 
 /* Collaborations
 ---------------------------------*/
@@ -1121,16 +1443,29 @@ margin-top: 50px;
 }
 
 .Collaborations h2{
-    font-size:25px;
-    font-weight:500;
+    font-size:30px;
+    font-weight:510;
+    text-indent: 30px;
+    margin-top:30px;
+    margin-bottom:15px;
+    text-transform: capitalize;
+    color:grey;
+
 }
 
 .Collaborations h4{
-    margin-top:30px;
+    margin-top:0px;
+    text-align: center;
+    margin-bottom:60px;
+    margin-left:200px;
+    margin-right:200px;
+    color: #808080;
+    font-size:20px;
 }
 
 .Collaborations ul{
   margin-bottom: 30px;
+  font-size: 16px;
 }
 
 
@@ -1139,13 +1474,22 @@ margin-top: 50px;
 }
 
 .Collaborations ul li::before {
-  content: "\2022";
-  color: #940a26; /* Change the color */
+  content: "\21F0";
+  color: #000000; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  height: 1em;
+  margin-left: 0em; /* Also needed for space (tweak if needed) */
 } 
+
+.Collaborations img {
+    display: block;
+    border-radius: 0%;
+    width: 250px;
+    height: 110px;
+    margin: 0 auto;
+}
 
 .Teaching-container {
 background-repeat: no-repeat;
@@ -1153,15 +1497,29 @@ background-position: right;
 background-size: auto 100%;
 background-position-y: 70px;
 margin-bottom: 50px;
-margin-top: 50px;
+margin-top: 10px;
 }
 #Teaching, h2, h3, h4, p {
 /* color: #0A1525; */
 }
 
 .Teaching h2{
-    font-size:25px;
-    font-weight:500;
+    font-size:30px;
+    font-weight:510;
+    text-align: center;
+    text-indent: 0px;
+    margin-top:0px;
+    text-transform: capitalize;
+    color:grey;
+}
+
+.Teaching h4{
+    color:#8c5762;
+    font-weight: 2000;
+}
+
+.Teaching p{
+    color:grey;
 }
 
 
@@ -1185,15 +1543,38 @@ background-size: auto 100%;
 background-position-y: 70px;
 margin-bottom: 50px;
 margin-top: 50px;
+background-color: #f1f1f1;
 }
 #Awards, h2, h3, h4, p {
 /* color: #0A1525; */
 }
 
 .Awards h2{
-    font-size:25px;
-    font-weight:500;
+    font-size:30px;
+    font-weight:510;
+    text-align: center;
+    text-indent: 0px;
+    margin-top:30px;
+    color:grey;
+    text-transform: capitalize;
 }
+
+.Awards h4{
+    font-size:30px;
+    font-weight:510;
+    text-align: center;
+    margin-top:50px;
+    color:grey;
+}
+
+.Awards li{
+    font-size: 15px;
+}
+
+.fa .fa-trophy{
+    margin:0px;
+}
+
 
 
 .Awards ul {
@@ -1201,12 +1582,13 @@ margin-top: 50px;
 }
 
 .Awards ul li::before {
-  content: "\2022";
-  color: #940a26; /* Change the color */
+  content: '\2022';
+  color: black; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-bottom:-10px;
 } 
 
 
@@ -1645,6 +2027,29 @@ transition: all .3s;
 
 
 /*new_profolio*/
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
 
 
 
@@ -2226,53 +2631,6 @@ div.mc-image {
     padding: 0;
 }
 
-/*-------------------
------News Styles-----
----------------------*/    
-.timeline{
-    position:relative;
-    margin-bottom:100px;
-    z-index:1;
-}
-
-.timeline:before{
-    display:block;
-    content:"";
-    position:absolute;
-    width:50%;
-    height:100%;
-    left:1px;
-    top:0;
-    border-right:1px solid #F74D4D;
-    z-index:-1;
-} 
-
-.timeline:after{
-    display:block;
-    content:"";
-    position:absolute;
-    width:50%;
-    height:100px;
-    left:1px;
-    bottom:-105px;
-    border-right:1px dashed #F74D4D;
-    z-index:-1;
-} 
-
-.timeline .date-title{
-    text-align:center;
-    margin:70px 0 50px;
-}
-
-.timeline .date-title span{
-    padding:15px 30px;
-    font-size:21px;
-    font-weight:400;
-    color: #000;
-    background: #FEE16F;
-    border-radius:5px;
-}
-
 .news-item {
     padding-bottom:45px;
 }
@@ -2510,6 +2868,113 @@ div.mc-image {
 .news-content .news-media.gallery{
     box-shadow:4px 4px 0 #bbb,8px 8px 0 #ddd;
 }
+
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.55rem; }
+  .card > hr {
+    margin-right: 0;
+    margin-left: 0; }
+  .card > .list-group {
+    border-top: inherit;
+    border-bottom: inherit; }
+    .card > .list-group:first-child {
+      border-top-width: 0;
+      border-top-left-radius: calc(0.25rem - 1px);
+      border-top-right-radius: calc(0.25rem - 1px); }
+    .card > .list-group:last-child {
+      border-bottom-width: 0;
+      border-bottom-right-radius: calc(0.25rem - 1px);
+      border-bottom-left-radius: calc(0.25rem - 1px); }
+  .card > .card-header + .list-group,
+  .card > .list-group + .card-footer {
+    border-top: 0; }
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 0rem 0rem; 
+  width: 100%;}
+
+.card-title {
+  margin: 10px; }
+
+.card-subtitle {
+  margin-bottom: 20px;
+  margin-top: 20px;}
+
+.card-text:last-child {
+  margin-bottom: 0; }
+
+.card-link:hover {
+  text-decoration: none; }
+
+.card-link + .card-link {
+  margin-left: 2rem /* rtl:ignore */; }
+
+.card-header {
+  padding: 1rem 2rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+  .card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
+
+.card-footer {
+  padding: 0rem 0rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125); }
+  .card-footer:last-child {
+    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
+
+.card-header-tabs {
+  margin-right: -1rem;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  border-bottom: 0; }
+  .card-header-tabs .nav-link.active {
+    background-color: #fff;
+    border-bottom-color: #fff; }
+
+.card-header-pills {
+  margin-right: -1rem;
+  margin-left: -1rem; }
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  border-radius: calc(0.25rem - 1px); }
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  width: 100%; }
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px); }
+
+.card-img,
+.card-img-bottom {
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px); }
+
+.card-group > .card {
+  margin-bottom: 0.75rem; }
+
+
                                
 /*
    Media Queries
@@ -2554,13 +3019,27 @@ margin: 0 0 9px 0;
 .inner_section {
 padding: 20px 0px 20px;
 }
+
+.container h2{
+    font-size:30px;
+    font-weight:510;
+    text-indent: 30px;
+    margin-top:30px;
+    margin-bottom:10px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.collab_section {
+padding: 0px 0px 0px;
+}
 #AboutMe img{
 margin-bottom:20px;
 }
 #AboutMe h3{
 font-size:26px;
-line-height:22px;
-}
+line-height:22px;}
 .service_block h3 { 
 font-size: 16px;
 }
@@ -2657,6 +3136,34 @@ width: 100%;
 width: 99%;
 }
 .read_more2{
-display:none;
+dispcarollay:none;
 }
+
+.card-group {
+    display: flex;
+    flex-flow: row wrap; }
+    .card-group > .card {
+      flex: 1 0 0%;
+      margin-bottom: 0; }
+      .card-group > .card + .card {
+        margin-left: 0;
+        border-left: 0; }
+      .card-group > .card:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; }
+        .card-group > .card:not(:last-child) .card-img-top,
+        .card-group > .card:not(:last-child) .card-header {
+          border-top-right-radius: 0; }
+        .card-group > .card:not(:last-child) .card-img-bottom,
+        .card-group > .card:not(:last-child) .card-footer {
+          border-bottom-right-radius: 0; }
+      .card-group > .card:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; }
+        .card-group > .card:not(:first-child) .card-img-top,
+        .card-group > .card:not(:first-child) .card-header {
+          border-top-left-radius: 0; }
+        .card-group > .card:not(:first-child) .card-img-bottom,
+        .card-group > .card:not(:first-child) .card-footer {
+          border-bottom-left-radius: 0; }
 }

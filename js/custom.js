@@ -5,6 +5,7 @@ Licence under Creative Commons Attribution 3.0
 Do not remove the back-link in this web template 
 -------------------------------------------------------*/
 
+
 $(window).load(function() {
     jQuery('#all').click();
     return false;
