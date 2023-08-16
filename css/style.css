@@ -1299,7 +1299,7 @@ margin-top: 10px;
 .Research-sub-container1{
 background-repeat: no-repeat;
 background-position: right;
-background-size: auto 110%;
+background-size: auto 100%;
 background-position-y: 70px;
 margin-bottom: 0px;
 margin-top: 0px;
@@ -1313,7 +1313,7 @@ background-color:#f1f1f1;
 .Research-sub-container2{
 background-repeat: no-repeat;
 background-position: right;
-background-size: auto 110%;
+background-size: auto 100%;
 background-position-y: 70px;
 margin-bottom: 0px;
 margin-top: 0px;
@@ -1326,7 +1326,7 @@ background-color:white;
 
 .Research h2{
     font-size:30px;
-    font-weight:510;
+    font-weight:400;
     text-indent: 30px;
     margin-top:30px;
     margin-bottom:0px;
@@ -1339,7 +1339,7 @@ background-color:white;
     font-size:25px;
     color:gray;
     text-align: center;
-    font-weight:510;
+    font-weight:400;
     text-transform: capitalize;
 }
 
@@ -1372,7 +1372,7 @@ margin-right: 0px;
 
 .Timeline h2{
     font-size:30px;
-    font-weight:510;
+    font-weight:400;
     text-indent: 30px;
     margin-top:30px;
     margin-bottom:30px;
@@ -1409,6 +1409,8 @@ gin-top:10px;
   font-size: 15px;
   margin-bottom: 0px;
   margin-left: 0px;
+  margin-right: 0px;
+  vertical-align: center;
 }
 
 .Teaching .active, .collapsible:hover {
@@ -1456,7 +1458,7 @@ margin-top: 50px;
     font-size:25px;
     text-indent: 0;
     text-align: center;
-    font-weight:510;
+    font-weight:410;
     margin-top:30px;
     margin-bottom:15px;
     text-transform: capitalize;
@@ -1531,7 +1533,7 @@ margin-top: 10px;
 
 .Teaching h2{
     font-size:25px;
-    font-weight:510;
+    font-weight:400;
     text-transform: capitalize;
     color:grey;
 }
@@ -1575,7 +1577,7 @@ background-color: #f1f1f1;
 
 .Awards h2{
     font-size:25px;
-    font-weight:510;
+    font-weight:400;
     text-align: center;
     text-indent: 0px;
     margin-top:30px;
@@ -1585,7 +1587,7 @@ background-color: #f1f1f1;
 
 .Awards h4{
     font-size:30px;
-    font-weight:510;
+    font-weight:400;
     text-align: center;
     margin-top:50px;
     color:grey;
@@ -3051,7 +3053,7 @@ padding: 20px 0px 20px;
 
 .container h2{
     font-size:30px;
-    font-weight:510;
+    font-weight:400;
     text-indent: 30px;
     margin-top:30px;
     margin-bottom:10px;
