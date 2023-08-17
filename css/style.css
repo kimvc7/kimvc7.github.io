@@ -1287,17 +1287,16 @@ background-size: auto 110%;
 margin-top:0px;
 margin-bottom:0px;
 background-color: black;
+height:89em;
 text-align: center;
 }
 
 .CV iframe{
-  margin-top:3em;
-  height: 90%;
+  margin-top:5em;
+  height: 82em;
 }
 
-.CV .container {
-  height:100%;
-}
+
 
 
 /* Research
