@@ -3190,6 +3190,10 @@ width: 99%;
 dispcarollay:none;
 }
 
+.iframe{
+  width:95%;
+}
+
 .card-group {
     display: flex;
     flex-flow: row wrap; }
