@@ -1450,6 +1450,7 @@ margin-right: 0px;
 }
 
 .Teaching .content {
+  margin-right:-1em;
   padding: 0 10px;
   max-height: 0;
   margin-bottom:10px;
@@ -1563,11 +1564,11 @@ margin-top: 0px;
     text-transform: capitalize;
     color:grey;
     margin-left:-1.2em;
-    margin-top:-10px;
 }
 
 .Teaching h4{
     color:#8c5762;
+    width:70%;
     font-weight: 2000;
     font-size:16px;
 }
