@@ -1287,13 +1287,16 @@ background-size: auto 110%;
 margin-top:0px;
 margin-bottom:0px;
 background-color: black;
-height:89em;
 text-align: center;
 }
 
 .CV iframe{
   margin-top:3em;
-  height: 82em;
+  height: 90%;
+}
+
+.CV .container {
+  height:100%;
 }
 
 
@@ -3185,6 +3188,7 @@ width: 100%;
 .team_area {
 width: 99%;
 }
+
 
 .read_more2{
 dispcarollay:none;
