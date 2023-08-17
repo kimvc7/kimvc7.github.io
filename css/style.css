@@ -1476,7 +1476,7 @@ margin-top: 50px;
 
 .Collaborations h2{
     font-size:25px;
-    text-indent: 0;
+    margin-left:-1em;
     text-align: center;
     font-weight:410;
     margin-top:30px;
@@ -1538,6 +1538,12 @@ margin-top: 50px;
     height:60%;
 }
 
+.Collaborations .img-responsive2{
+    width:80%;
+    height:80%;
+    margin-left:50px;
+}
+
 
 .Teaching-container {
 background-repeat: no-repeat;
@@ -1556,6 +1562,8 @@ margin-top: 0px;
     font-weight:400;
     text-transform: capitalize;
     color:grey;
+    margin-left:-1.2em;
+    margin-top:-10px;
 }
 
 .Teaching h4{
