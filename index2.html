@@ -70,8 +70,14 @@
 <section id="CV">
   <div class="CV CV-container fadeInLeft animated wow">
     <div class="container">
-<iframe src="KimberlyVillalobosCarballoCV.pdf#zoom=40&toolbar=1&view=Fit" width="80%" height="100%"></iframe> </div></div>
+<iframe id="Frame" src="KimberlyVillalobosCarballoCV.pdf#zoom=70&toolbar=1&view=Fit" width="80%" height="100%"></iframe> </div></div>
 </section>
+
+<script>
+document.getElementById("Frame").contentWindow.onload = function() {
+    this.document.getElementsByTagName("img")[0].style.width="100%";
+};
+</script>
 
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
