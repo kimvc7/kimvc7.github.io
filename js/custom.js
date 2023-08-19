@@ -6,6 +6,10 @@ Do not remove the back-link in this web template
 -------------------------------------------------------*/
 
 
+$('.scroll-link').on('click',function() {
+  $('.navbar-collapse').collapse('hide');
+});
+
 $(window).load(function() {
     jQuery('#all').click();
     return false;

@@ -532,6 +532,7 @@ p {
     border: 0px solid #fff;
     min-height: 40px;
     margin-bottom: 0px;
+    margin-right:0px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -1315,7 +1316,7 @@ margin-top: 10px;
 }
 
 
-.Research-sub-container1{
+.Research-sub-container-gray{
 background-repeat: no-repeat;
 background-position: right;
 background-size: auto 100%;
@@ -1325,11 +1326,11 @@ margin-top: 0px;
 background-color:#f1f1f1;
 }
 
-.Research-sub-container1 .container{
+.Research-sub-container-gray .container{
 background-color:#f1f1f1;
 }
 
-.Research-sub-container2{
+.Research-sub-container-white{
 background-repeat: no-repeat;
 background-position: right;
 background-size: auto 100%;
@@ -1339,7 +1340,7 @@ margin-top: 0px;
 background-color:white;
 }
 
-.Research-sub-container2 .container{
+.Research-sub-container-white .container{
 background-color:white;
 }
 
