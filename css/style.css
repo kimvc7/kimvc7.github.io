@@ -731,6 +731,17 @@ margin-top: 0px;
     font-size:16px;
 }
 
+.Teaching h3{
+    margin-top:0px;
+    text-indent: 0;
+    text-align: center;
+    margin-bottom:60px;
+    margin-left:1.5em;
+    margin-right:1.5em;
+    color: #808080;
+    font-size:18px;
+}
+
 .Teaching p{
     color:grey;
 }
@@ -809,7 +820,7 @@ margin-top: 0px;
 
 
 .Teaching h3{
-    font-weight: 500;
+    font-weight: 300;
     margin-top:0px;
     text-indent: 0;
     text-align: center;
