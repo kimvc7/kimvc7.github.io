@@ -671,8 +671,6 @@ margin-top: 50px;
 }
 
 .Collaborations ul li::before {
-  content: "\21F0";
-  color: #000000; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
@@ -873,13 +871,8 @@ background-color: #f1f1f1;
     height:60%;
 }
 
-.Awards ul {
-  list-style: none; /* Remove default bullets */
-}
 
 .Awards ul li::before {
-  content: '';
-  color: black; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
